@@ -1,0 +1,11 @@
+[Unit]
+Description = Power Off Switch
+
+[Service]
+ExecStart=/usr/bin/python /home/pi/bin/power-off-switch.py
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
+
